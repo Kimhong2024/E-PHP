@@ -1,0 +1,91 @@
+<div class="sidebar" data-background-color="dark">
+    <div class="sidebar-logo">
+        <!-- Logo Header -->
+        <div class="logo-header" data-background-color="dark">
+            <a href="index.php" class="logo">
+                <img src="assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20" />
+            </a>
+            <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                    <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                    <i class="gg-menu-left"></i>
+                </button>
+            </div>
+            <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+            </button>
+        </div>
+        <!-- End Logo Header -->
+    </div>
+    <div class="sidebar-wrapper scrollbar scrollbar-inner">
+        <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+                <li class="nav-item <?=($p=="Dashboard"?'active':'')?>">
+                    <a class="menu-link" href="index.php">
+                        <i class="fas fa-home"></i>
+                        <p data-i18n="Dashboards">Dashboard</p>
+                    </a>
+                </li>
+
+                <!-- Shop -->
+                <li class="nav-item <?=($p=="Product"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Product">
+                        <i class="fas fa-box"></i>
+                        <p data-i18n="Product">Product</p>
+                    </a>
+                </li>
+                <li class="nav-item <?=($p=="Order"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Order">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p data-i18n="Order">Order</p>
+                    </a>
+                </li>
+                <li class="nav-item <?=($p=="Customer"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Customer">
+                        <i class="fas fa-users"></i>
+                        <p data-i18n="Customer">Customer</p>
+                    </a>
+                </li>
+                <li class="nav-item <?=($p=="SalesReports"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=SalesReports">
+                        <i class="fas fa-chart-line"></i>
+                        <p data-i18n="Sales Reports">Sales Reports</p>
+                    </a>
+                </li>
+                <li class="nav-item <?=($p=="Coupons"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Coupons">
+                        <i class="fas fa-tags"></i>
+                        <p data-i18n="Coupons">Coupons</p>
+                    </a>
+                </li>
+                <li class="nav-item <?=($p=="Payment"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Payment">
+                        <i class="fas fa-credit-card"></i>
+                        <p data-i18n="Payment">Payment</p>
+                    </a>
+                </li>
+               
+                <li class="nav-item <?=($p=="Reviews"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Reviews">
+                        <i class="fas fa-star"></i>
+                        <p data-i18n="Reviews & Ratings">Reviews & Ratings</p>
+                    </a>
+                </li>
+                <li class="nav-item <?=($p=="UserRoles"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=UserRoles">
+                        <i class="fas fa-user-shield"></i>
+                        <p data-i18n="User Roles & Permissions">User Roles & Permissions</p>
+                    </a>
+                </li>
+                <li class="nav-item <?=($p=="Settings"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Settings">
+                        <i class="fas fa-cog"></i>
+                        <p data-i18n="Settings">Settings</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

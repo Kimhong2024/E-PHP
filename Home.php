@@ -1,0 +1,207 @@
+<!-- Promotions and Discounts Section -->
+<section id="promotions" class="container mx-auto my-12 p-8 rounded-lg ">
+        <h2 class="text-3xl font-bold text-center mb-8">Promotions & Discounts</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Promotion Card 1: Winter Sale -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center">
+                <!-- Snowflake Icon -->
+                <div class="flex justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-500">Winter Sale</h3>
+                <p class="text-gray-500 mb-4">Up to <span class="text-red-500 font-bold">50% off</span> on selected items!</p>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                    Shop Now
+                </button>
+            </div>
+    
+            <!-- Promotion Card 2: Buy One Get One Free -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center">
+                <!-- Gift Icon -->
+                <div class="flex justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-500">Buy One Get One Free</h3>
+                <p class="text-gray-500 mb-4">Applicable on our new arrivals collection.</p>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                    View Collection
+                </button>
+            </div>
+    
+            <!-- Promotion Card 3: Free Shipping -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow text-center">
+                <!-- Truck Icon -->
+                <div class="flex justify-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM12 6h2m-2 4h2m-2 4h2m-2 4h2m-6-8h2m-2 4h2m-2 4h2m-2 4h2m6-16v2m0 4v2m0 4v2m0 4v2M3 7h18M3 11h18M3 15h18M3 19h18" />
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold mb-2 text-blue-500">Free Shipping</h3>
+                <p class="text-gray-500 mb-4">On orders above <span class="font-bold">$50</span>!</p>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                    Start Shopping
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Collections Section -->
+    <section id="collections" class="container mx-auto my-12 px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Collections</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Collection Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/64c9067d722c95206049763b/0x0.jpg?format=jpg&crop=948,533,x0,y6,safe&height=900&width=1600&fit=bounds" alt="Collection 1" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2 text-center">Apple</h3>
+                <p class="text-gray-500 mb-4 text-center">Explore the world of cutting-edge technology with Apple's latest innovations.</p>
+                <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Shop Now</button>
+            </div>
+
+            <!-- Collection Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <img src="https://images.samsung.com/is/image/samsung/assets/ph/2501/smartphones/galaxy-s25/reviews/galaxy-s25-share-image.jpg?$ORIGIN_JPG$" alt="Collection 2" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2 text-center">Samsung</h3>
+                <p class="text-gray-500 mb-4 text-center">Discover Samsung's most powerful and sleek smartphones yet.</p>
+                <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Shop Now</button>
+            </div>
+
+            <!-- Collection Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <img src="https://cp.slaati.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-29-at-10.19.43-PM.jpeg" alt="Collection 3" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2 text-center">Vivo</h3>
+                <p class="text-gray-500 mb-4 text-center">Explore the latest features of Vivo's innovative smartphones.</p>
+                <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Banner Begin -->
+    <div class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-2">
+                <!-- Left Banner Section -->
+                <div class="w-full lg:w-1/2 md:w-1/2 sm:w-full px-2 mb-4">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="./images/bannerContact.jpg" alt="Summer Sale" class="w-full h-auto object-cover">
+                        <div class="absolute inset-0 flex flex-col justify-center items-start p-6 bg-black bg-opacity-0">
+                            <h2 class="text-white text-3xl font-extrabold mb-3">Summer Sale!</h2>
+                            <p class="text-white text-lg mb-5">Get up to <span class="font-semibold text-yellow-300">50% off</span> on selected items. Limited time only!</p>
+                            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right Banner Section -->
+                <div class="w-full lg:w-1/2 md:w-1/2 sm:w-full px-2 mb-4">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="./images/bannerabout.jpg" alt="New Arrivals" class="w-full h-auto object-cover">
+                        <div class="absolute inset-0 flex flex-col justify-center items-start p-6 bg-black bg-opacity-0">
+                            <h2 class="text-white text-3xl font-extrabold mb-3">New Arrivals!</h2>
+                            <p class="text-white text-lg mb-5">Discover the latest in tech and gadgets</p>
+                            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+    <!-- Featured Products Section -->
+    <section id="featured-products" class="container mx-auto my-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Featured Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Product Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow product-card">
+                <img src="./images/iphone13 mini.jpg" alt="iPhone 13 Mini" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2">iPhone 13 Mini</h3>
+                <p class="text-gray-500 mb-2">Compact and powerful, the iPhone 13 Mini is perfect for those who love small phones.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-blue-500 font-bold">$699.99</span>
+                    <button
+                    class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition add-to-cart"
+                    data-name="iPhone 13 Mini" data-price="699.99" data-image="./images/iphone13 mini.jpg">
+                    <span class="flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        </svg>
+                        Add to Cart
+                    </span>
+                </button>
+                </div>
+            </div>
+            <!-- Repeat Product Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow product-card">
+                <img src="./images/a3.jpg" alt="Samsung Galaxy A54" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2">Samsung Galaxy A54</h3>
+                <p class="text-gray-500 mb-2">A mid-range smartphone with a great display and camera.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-blue-500 font-bold">$499.99</span>
+                    <button
+                    class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition add-to-cart"
+                    data-name="Samsung Galaxy A54" data-price="499.99" data-image="./images/a3.jpg">
+                    <span class="flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        </svg>
+                        Add to Cart
+                    </span>
+                </button>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow product-card">
+                <img src="https://th.bing.com/th/id/R.cc30f481db7aea8e9612e3ca42f20e5a?rik=Dvv%2fscPaIXcg3w&pid=ImgRaw&r=0" alt="Vivo X90 Pro" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2">Vivo X90 Pro</h3>
+                <p class="text-gray-500 mb-2">A flagship smartphone with a powerful camera and sleek design.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-blue-500 font-bold">$899.99</span>
+                    <button
+                    class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition add-to-cart"
+                    data-name="Vivo X90 Pro" data-price="899.99" data-image="https://th.bing.com/th/id/R.cc30f481db7aea8e9612e3ca42f20e5a?rik=Dvv%2fscPaIXcg3w&pid=ImgRaw&r=0">
+                    <span class="flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        </svg>
+                        Add to Cart
+                    </span>
+                </button>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow product-card">
+                <img src="./images/iphone 16 pro.jpg" alt="iPhone 16 Pro Max" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-lg font-semibold mb-2">iPhone 16 Pro Max</h3>
+                <p class="text-gray-500 mb-2">The latest flagship from Apple with a stunning display and advanced camera system.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-blue-500 font-bold">$1299.99</span>
+                    <button
+                    class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition add-to-cart"
+                    data-name="iPhone 16 Pro Max" data-price="1299.99" data-image="./images/iphone 16 pro.jpg">
+                    <span class="flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        </svg>
+                        Add to Cart
+                    </span>
+                </button>
+                </div>
+            </div>
+           
+        </div>
+    </section>

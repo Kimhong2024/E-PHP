@@ -36,6 +36,12 @@
                         <p data-i18n="Product">Product</p>
                     </a>
                 </li>
+                <li class="nav-item <?=($p=="Category"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Category">
+                        <i class="fas fa-chart-line"></i>
+                        <p data-i18n="Category">Category</p>
+                    </a>
+                </li>
                 <li class="nav-item <?=($p=="Order"?'active':'')?>">
                     <a class="menu-link" href="index.php?p=Order">
                         <i class="fas fa-shopping-cart"></i>
@@ -48,12 +54,7 @@
                         <p data-i18n="Customer">Customer</p>
                     </a>
                 </li>
-                <li class="nav-item <?=($p=="SalesReports"?'active':'')?>">
-                    <a class="menu-link" href="index.php?p=SalesReports">
-                        <i class="fas fa-chart-line"></i>
-                        <p data-i18n="Sales Reports">Sales Reports</p>
-                    </a>
-                </li>
+                
                 <li class="nav-item <?=($p=="Coupons"?'active':'')?>">
                     <a class="menu-link" href="index.php?p=Coupons">
                         <i class="fas fa-tags"></i>

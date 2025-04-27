@@ -21,8 +21,8 @@
                    case 'Customer':
                        $page = "Customer.php";
                        break;
-                   case 'SalesReports':
-                       $page = "SalesReports.php";
+                   case 'Category':
+                       $page = "Category.php";
                        break;
                    case 'Coupons':
                        $page = "Coupons.php";

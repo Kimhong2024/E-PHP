@@ -1,4 +1,10 @@
 <?php
+ session_start();
+
+ if (!isset($_SESSION['user_id'])) {
+     header('Location: login.php');
+     exit();
+ }
            $page = "Home.php"; // Default page
            $p = "Home"; // Default value for $p
            $checkout = false;

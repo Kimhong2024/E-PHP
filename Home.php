@@ -94,33 +94,67 @@
     <div class="bg-gray-100 py-16">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap -mx-2">
-                <!-- Left Banner Section -->
-                <div class="w-full lg:w-1/2 md:w-1/2 sm:w-full px-2 mb-4">
-                    <div class="relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="./images/bannerContact.jpg" alt="Summer Sale" class="w-full h-auto object-cover">
-                        <div class="absolute inset-0 flex flex-col justify-center items-start p-6 bg-black bg-opacity-0">
-                            <h2 class="text-white text-3xl font-extrabold mb-3">Summer Sale!</h2>
-                            <p class="text-white text-lg mb-5">Get up to <span class="font-semibold text-yellow-300">50% off</span> on selected items. Limited time only!</p>
-                            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-                                Shop Now
-                            </button>
+                <?php
+                require_once 'admin/include/db.php';
+                $db = (new Database())->connect();
+                $stmt = $db->query("SELECT * FROM banners WHERE status = 'active' ORDER BY position, id DESC");
+                $banners = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                if (empty($banners)) {
+                    // Default banners if none are found in database
+                    ?>
+                    <!-- Left Banner Section -->
+                    <div class="w-full lg:w-1/2 md:w-1/2 sm:w-full px-2 mb-4">
+                        <div class="relative overflow-hidden rounded-lg shadow-lg">
+                            <img src="./images/bannerContact.jpg" alt="Summer Sale" class="w-full h-auto object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center items-start p-6 bg-black bg-opacity-0">
+                                <h2 class="text-white text-3xl font-extrabold mb-3">Summer Sale!</h2>
+                                <p class="text-white text-lg mb-5">Get up to <span class="font-semibold text-yellow-300">50% off</span> on selected items. Limited time only!</p>
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                                    Shop Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-    
-                <!-- Right Banner Section -->
-                <div class="w-full lg:w-1/2 md:w-1/2 sm:w-full px-2 mb-4">
-                    <div class="relative overflow-hidden rounded-lg shadow-lg">
-                        <img src="./images/bannerabout.jpg" alt="New Arrivals" class="w-full h-auto object-cover">
-                        <div class="absolute inset-0 flex flex-col justify-center items-start p-6 bg-black bg-opacity-0">
-                            <h2 class="text-white text-3xl font-extrabold mb-3">New Arrivals!</h2>
-                            <p class="text-white text-lg mb-5">Discover the latest in tech and gadgets</p>
-                            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-                                Shop Now
-                            </button>
+
+                    <!-- Right Banner Section -->
+                    <div class="w-full lg:w-1/2 md:w-1/2 sm:w-full px-2 mb-4">
+                        <div class="relative overflow-hidden rounded-lg shadow-lg">
+                            <img src="./images/bannerabout.jpg" alt="New Arrivals" class="w-full h-auto object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center items-start p-6 bg-black bg-opacity-0">
+                                <h2 class="text-white text-3xl font-extrabold mb-3">New Arrivals!</h2>
+                                <p class="text-white text-lg mb-5">Discover the latest in tech and gadgets</p>
+                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                                    Shop Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <?php
+                } else {
+                    foreach ($banners as $banner) {
+                        ?>
+                        <div class="w-full lg:w-1/2 md:w-1/2 sm:w-full px-2 mb-4">
+                            <div class="relative overflow-hidden rounded-lg shadow-lg">
+                                <img src="admin/<?php echo htmlspecialchars($banner['image_path']); ?>" 
+                                     alt="<?php echo htmlspecialchars($banner['title']); ?>" 
+                                     class="w-full h-auto object-cover">
+                                <div class="absolute inset-0 flex flex-col justify-center items-start p-6 bg-black bg-opacity-0">
+                                    <h2 class="text-white text-3xl font-extrabold mb-3"><?php echo htmlspecialchars($banner['title']); ?></h2>
+                                    <p class="text-white text-lg mb-5"><?php echo htmlspecialchars($banner['description']); ?></p>
+                                    <?php if ($banner['button_text'] && $banner['button_link']): ?>
+                                        <a href="<?php echo htmlspecialchars($banner['button_link']); ?>" 
+                                           class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                                            <?php echo htmlspecialchars($banner['button_text']); ?>
+                                        </a>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                }
+                ?>
             </div>
         </div>
     </div>

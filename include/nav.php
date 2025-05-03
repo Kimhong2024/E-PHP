@@ -15,9 +15,9 @@
                         <i class="fas fa-box"></i>
                         <p>Home</p>
                     </a>
-                    <a href="index.php?p=Product" class="flex items-center space-x-2 text-gray-500 hover:text-green-500 transition">
+                    <a href="index.php?p=Shop" class="flex items-center space-x-2 text-gray-500 hover:text-green-500 transition">
                         <i class="fas fa-box"></i>
-                        <p>Product</p>
+                        <p>Shop</p>
                     </a>
                     <a href="index.php?p=Contact" class="flex items-center space-x-2 text-gray-500 hover:text-green-500 transition">
                         <i class="fas fa-box"></i>

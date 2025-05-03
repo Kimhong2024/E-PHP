@@ -68,10 +68,10 @@
                     </a>
                 </li>
                
-                <li class="nav-item <?=($p=="Reviews"?'active':'')?>">
-                    <a class="menu-link" href="index.php?p=Reviews">
+                <li class="nav-item <?=($p=="Banner"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Banner">
                         <i class="fas fa-star"></i>
-                        <p data-i18n="Reviews & Ratings">Reviews & Ratings</p>
+                        <p data-i18n="Banner">Banner</p>
                     </a>
                 </li>
                 <li class="nav-item <?=($p=="UserRoles"?'active':'')?>">

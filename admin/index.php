@@ -33,8 +33,8 @@
                    case 'Shipping':
                        $page = "Shipping.php";
                        break;
-                   case 'Reviews':
-                       $page = "Reviews.php";
+                   case 'Banner':
+                       $page = "Banner.php";
                        break;
                    case 'UserRoles':
                        $page = "UserRoles.php";

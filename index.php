@@ -12,8 +12,8 @@ if (!isset($_SESSION['user_id'])) {
            if(isset($_GET['p'])){
                $p = $_GET['p'];
                switch($p){
-                   case 'Product':
-                       $page = "Product.php";
+                   case 'Shop':
+                       $page = "Shop.php";
                        break;
                    case 'Contact':
                        $page = "Contact.php";

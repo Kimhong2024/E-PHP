@@ -1,10 +1,10 @@
 <?php
-        session_start();
+        // session_start();
 
-        if (!isset($_SESSION['user_id'])) {
-            header('Location: ./auth/login.php');
-            exit();
-        }
+        // if (!isset($_SESSION['user_id'])) {
+        //     header('Location: ./auth/login.php');
+        //     exit();
+        // }
 
            $page = "Dashboard.php"; // Default page
            $p = "Dashboard"; // Default value for $p

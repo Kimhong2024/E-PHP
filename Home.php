@@ -50,33 +50,42 @@
     </section>
 
 
-    <!-- Collections Section -->
+    <!--Category Collections Section -->
     <section id="collections" class="container mx-auto my-12 px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Collections</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <!-- Collection Card 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <img src="https://imageio.forbes.com/specials-images/imageserve/64c9067d722c95206049763b/0x0.jpg?format=jpg&crop=948,533,x0,y6,safe&height=900&width=1600&fit=bounds" alt="Collection 1" class="w-full h-48 object-cover rounded-md mb-4">
-                <h3 class="text-lg font-semibold mb-2 text-center">Apple</h3>
-                <p class="text-gray-500 mb-4 text-center">Explore the world of cutting-edge technology with Apple's latest innovations.</p>
-                <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Shop Now</button>
-            </div>
+            <?php
+            require_once 'admin/include/db.php';
+            $db = (new Database())->connect();
+            $stmt = $db->query("SELECT * FROM categories ORDER BY id DESC");
+            $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-            <!-- Collection Card 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <img src="https://images.samsung.com/is/image/samsung/assets/ph/2501/smartphones/galaxy-s25/reviews/galaxy-s25-share-image.jpg?$ORIGIN_JPG$" alt="Collection 2" class="w-full h-48 object-cover rounded-md mb-4">
-                <h3 class="text-lg font-semibold mb-2 text-center">Samsung</h3>
-                <p class="text-gray-500 mb-4 text-center">Discover Samsung's most powerful and sleek smartphones yet.</p>
-                <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Shop Now</button>
-            </div>
-
-            <!-- Collection Card 3 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <img src="https://cp.slaati.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-29-at-10.19.43-PM.jpeg" alt="Collection 3" class="w-full h-48 object-cover rounded-md mb-4">
-                <h3 class="text-lg font-semibold mb-2 text-center">Vivo</h3>
-                <p class="text-gray-500 mb-4 text-center">Explore the latest features of Vivo's innovative smartphones.</p>
-                <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Shop Now</button>
-            </div>
+            if (empty($categories)) {
+                echo '<div class="col-span-full text-center text-gray-500">No categories available</div>';
+            } else {
+                foreach ($categories as $category) {
+                    ?>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                        <?php if (!empty($category['image'])): ?>
+                            <img src="admin/<?php echo htmlspecialchars($category['image']); ?>" 
+                                 alt="<?php echo htmlspecialchars($category['name']); ?>" 
+                                 class="w-full h-48 object-cover rounded-md mb-4">
+                        <?php else: ?>
+                            <div class="w-full h-48 bg-gray-200 rounded-md mb-4 flex items-center justify-center">
+                                <i class="fas fa-image text-gray-400 text-4xl"></i>
+                            </div>
+                        <?php endif; ?>
+                        <h3 class="text-lg font-semibold mb-2 text-center"><?php echo htmlspecialchars($category['name']); ?></h3>
+                        <p class="text-gray-500 mb-4 text-center"><?php echo htmlspecialchars($category['description']); ?></p>
+                        <a href="products.php?category=<?php echo $category['id']; ?>" 
+                           class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition text-center block">
+                            Shop Now
+                        </a>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
         </div>
     </section>
 

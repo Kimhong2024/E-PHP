@@ -55,10 +55,10 @@
                     </a>
                 </li>
                 
-                <li class="nav-item <?=($p=="Coupons"?'active':'')?>">
-                    <a class="menu-link" href="index.php?p=Coupons">
+                <li class="nav-item <?=($p=="Slider"?'active':'')?>">
+                    <a class="menu-link" href="index.php?p=Slider">
                         <i class="fas fa-tags"></i>
-                        <p data-i18n="Coupons">Coupons</p>
+                        <p data-i18n="Slider">Slider</p>
                     </a>
                 </li>
                 <li class="nav-item <?=($p=="Payment"?'active':'')?>">

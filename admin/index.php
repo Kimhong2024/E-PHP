@@ -24,8 +24,8 @@
                    case 'Category':
                        $page = "Category.php";
                        break;
-                   case 'Coupons':
-                       $page = "Coupons.php";
+                   case 'Slider':
+                       $page = "Slider.php";
                        break;
                    case 'Payment':
                        $page = "Payment.php";

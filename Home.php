@@ -47,7 +47,7 @@
                 </button>
             </div>
         </div>
-    </section>
+</section>
 
 
     <!--Category Collections Section -->
